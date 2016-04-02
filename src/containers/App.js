@@ -7,6 +7,7 @@ import Page from '../components/Page'
 import Sidebar from './Sidebar'
 import Content from './Content'
 import Header from './Header'
+import Card from '../components/Card'
 
 import * as pageActions from '../actions/PageActions'
 
@@ -15,10 +16,26 @@ class App extends Component {
     const { user, page } = this.props
     const { setYear } = this.props.pageActions
 
+    const cardData = {
+      user: {
+        name: 'User Name'
+      },
+      data: {
+        text: 'Some text Some text Some text Some text Some text Some text Some text Some text Some'
+      },
+      info: {
+        comments: 34,
+        shares: 59,
+        likes: 128
+      }
+    }
+
     return <div>
       <Header>some header</Header>
       <Sidebar>sidebar block</Sidebar>
-      <Content>some content</Content>
+      <Content>
+        <Card data={cardData} />
+      </Content>
       <Page photos={page.photos} year={page.year} setYear={setYear} />
       <User name={user.name} />
     </div>

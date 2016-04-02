@@ -2,7 +2,10 @@
 
 .navbar-static-side {
     z-index: 2001;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    border-radius: 0;
+    overflow: hidden;
     background-color: #355d8a;
     padding-top: 60px;
     width: 220px;

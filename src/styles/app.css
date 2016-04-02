@@ -49,8 +49,26 @@ table {
 
 /*end reset*/
 
+body {
+  font-family: 'Myriad Pro';
+  font-size: 15px;
+  background-color: #efefef;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  margin: 3px 0;
+}
+
+.separator__line {
+  height: 1px;
+  margin: 0 auto;
+  background-color: #efefef;
+}
+
 
 @import url('./sidebar.css');
 @import url('./content.css');
 @import url('./header.css');
-  
+@import url('./card.css');
