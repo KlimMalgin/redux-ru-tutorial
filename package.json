@@ -35,9 +35,10 @@
     "babel-polyfill": "^6.3.14",
     "babel-runtime": "^6.3.19",
     "react": "^0.14.6",
+    "react-bootstrap": "^0.28.3",
     "react-dom": "^0.14.6",
+    "react-fontawesome": "^0.3.3",
     "react-redux": "^4.0.6",
-    "redux": "^3.1.0",
-    "react-bootstrap": "^0.28.3"
+    "redux": "^3.1.0"
   }
 }
